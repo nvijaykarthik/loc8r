@@ -8,7 +8,7 @@ var locationInfo = function (req, res) {
     res.render("locations-info", { title: "locationInfo" })
 }
 var addReview = function (req, res) {
-    res.render("index", { title: "addReview" })
+    res.render("location-review-form", { title: "addReview" })
 }
 
 module.exports = {
