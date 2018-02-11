@@ -1,0 +1,50 @@
+extends layout
+
+block content
+    .row.page-header
+        .col-lg-12
+            h1 Starcups
+            hr
+    .row
+        .col-xs-12.col-md-9
+            .row
+                .col-xs-12.col-sm-6
+                    p.rating.text-warning
+                        i.fa.fa-star
+                        i.fa.fa-star
+                        i.fa.fa-star
+                        i.far.fa-star
+                        i.far.fa-star
+                    p 125 High Street, Reading, RG6 1PS
+                    .card
+                        .card-header
+                            h2.card-title Opening hours
+                        .card-body
+                            p Monday - Friday : 7:00am - 7:00pm
+                            p Saturday : 8:00am - 5:00pm
+                            p Sunday : closed
+                    hr
+                    .card
+                        .card-header
+                            h2.card-title Facilities
+                        .card-body
+                            span.badge.badge-warning Hot drinks 
+                            &nbsp; 
+                            span.badge.badge-warning Food
+                            &nbsp;
+                            span.badge.badge-warning Premium wifi
+                    hr
+                .col-xs-12.col-sm-6.location-map
+                    .card
+                        .card-header
+                            h2.card-title Location map
+                        .card-body
+                            img.img-fluid.rounded(src='http://maps.googleapis.com/maps/api/staticmap?center=51.455041,-0.9690884&zoom=17&size=400x350&sensor=false&markers=51.455041,-0.9690884&scale=2')
+            .row
+                .col-xs-12.col-sm-12
+                    .card
+                        .card-header
+                            h2.card-title Review
+                                a.btn.btn-primary.float-right(href='/location/review/new') Add review
+                        .card-body
+                        
