@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="stylesheet", href="/bootstrap/css/bootstrap.min.css")
+    link(rel="stylesheet", href="/font-awsome/fontawesome-all.min.css")
+  body
+    nav.navbar.navbar-expand-lg.navbar-dark.bg-success
+      a.navbar-brand(href="/") Loc8r
+      button.navbar-toggler(type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation")
+        span.navbar-toggler-icon
+      div.collapse.navbar-collapse(id="navbarNavAltMarkup")
+        .navbar-nav
+          a.nav-item.nav-link(href="/about") About
+    .container
+      block content
+      footer
+        .row
+          .col-xs-12
+            small &copy; Vijaykarthik N.
+    script(src="/javascripts/jquery-3.3.1.min.js")
+    script(src="/javascripts/popper-1.12.9.min.js")
+    script(src="/bootstrap/js/bootstrap.min.js")
