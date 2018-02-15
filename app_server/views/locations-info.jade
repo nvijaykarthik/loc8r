@@ -40,6 +40,7 @@ block content
                             h2.card-title Location map
                         .card-body
                             img.img-fluid.rounded(src='http://maps.googleapis.com/maps/api/staticmap?center=51.455041,-0.9690884&zoom=17&size=400x350&sensor=false&markers=51.455041,-0.9690884&scale=2')
+            hr
             .row
                 .col-xs-12.col-sm-12
                     .card
@@ -47,4 +48,19 @@ block content
                             h2.card-title Review
                                 a.btn.btn-primary.float-right(href='/location/review/new') Add review
                         .card-body
+                            .media
+                                .media-body 
+                                    span.rating.text-warning
+                                        i.fa.fa-star
+                                        i.fa.fa-star
+                                        i.far.fa-star
+                                        i.far.fa-star
+                                        i.far.fa-star
+                                    span.reviewAuthor Simon Holmes
+                                    small.reviewTimestamp 16 July 2013
+                                    p It was okay. Coffee wasn't great, but the wifi was fast.
+                            
+        .col-xs-12.col-md-3
+            p.lead Simon's cafe is on Loc8r because it has accessible wifi and space to sit down with your laptop and get some work done. p If you've been and you like it - or if you don't - please leave a review to help other people just like you.
+
                         
